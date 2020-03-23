@@ -407,6 +407,18 @@
         "value",
         "Sets and returns the value of this Boolean block."
     ],
+    "boolEditor.FALSELabel": [
+        "FALSE Label",
+        ""
+    ],
+    "boolEditor.placeLabelRight": [
+        "Place Label Right",
+        ""
+    ],
+    "boolEditor.TRUELabel": [
+        "TRUE Label",
+        ""
+    ],
     "border": [
         "Border",
         "Specifies the stroke color or border image for outlining this component."
@@ -1621,7 +1633,7 @@
     ],
     "dateFormat.format": [
         "format",
-        "Specifies the date and time formatting string. For example, you can format the date to be displayed as \"Mon, Jan 5, 2015\" with this format string: \"E, MMM d, yyyy\". (<a href='http://wiki.dglogik.com/dglux5_wiki:dataflow:dataflow_blocks_reference:date_time_operations:date_format'>More information)</a>"
+        "Specifies the date and time formatting string. For example, you can format the date to be displayed as \"Mon, Jan 5, 2015\" with this format string: \"E, MMM d, yyyy\". (<a href='http://wiki.dglogik.com/dglux5_wiki:dgscript:home#datetime_formats_and_functions'>More information)</a>"
     ],
     "dateFormat.input": [
         "input",
@@ -1701,7 +1713,7 @@
     ],
     "daterange.format": [
         "Date Format String",
-        "Specifies the date format used by the component, as a date format string. The default format is \"yyyy&minus;MM&minus;ddTHH:mm:ss\".  (<a href='http://wiki.dglogik.com/dglux5_wiki:dataflow:dataflow_blocks_reference:date_time_operations:date_range'>More information</a>)."
+        "Specifies the date format used by the component, as a date format string. The default format is \"yyyy&minus;MM&minus;ddTHH:mm:ss\".  (<a href='http://wiki.dglogik.com/dglux5_wiki:dgscript:home#datetime_formats_and_functions'>More information</a>)."
     ],
     "dateRange.format": [
         "format",
@@ -1877,7 +1889,7 @@
     ],
     "datetime.year": [
         "year",
-        "Specifies the year."
+        "Specifies the year. Can include one to four digits."
     ],
     "datetimeAxis.alignLabelsToUnits": [
         "Align Labels To Units",
@@ -1922,6 +1934,10 @@
     "dbQuery.enabled": [
         "enabled",
         "<p>Specifies whether the query block is enabled.</p><p><strong>TRUE</strong>: The query runs when this block is invoked.</p><p><strong>FALSE</strong>: Nothing happens when this block is invoked.</p>"
+    ],
+    "dbQuery.error": [
+        "error",
+        "Returns the error message, if any."
     ],
     "dbQuery.interval": [
         "interval",
@@ -1990,6 +2006,10 @@
     "deselectChildOnClick": [
         "Deselect Child On Click",
         "If the container's selection mode is single&minus;select, this property enables the user to deselect a selected item by single&minus;clicking it."
+    ],
+    "deviceId": [
+        "Device Id",
+        ""
     ],
     "deviceMotion.accelerationGX": [
         "Acceleration GX",
@@ -2495,6 +2515,14 @@
         "enableOutput",
         "Enable population of the repeater output table."
     ],
+    "enumLabels": [
+        "Enum Labels",
+        ""
+    ],
+    "enums": [
+        "Enums",
+        ""
+    ],
     "error": [
         "Error",
         "Returns the error message, if any."
@@ -2509,7 +2537,7 @@
     ],
     "eventGate.logOrder": [
         "logOrder",
-        "<p>Specifies how events are logged.</p><p><strong>none</strong>: Events are not logged.</p><p><strong>firstOccurance</strong>: The first event for each <strong>input <em>n</em></strong> is recorded, beginning with a reset and ending when all fields have been updated at least once. The listener remembers the order in which each input received its first update.</p><p><strong>lastOccurence</strong>: The last input change for each <strong>input <em>n</em></strong> is recorded, beginning with a reset and ending when all fields have been updated at least once. The listener remembers the order in which each input received its most recent update.</p><p><strong>all</strong>: All input changes are logged, beginning with a reset and ending when all fields have been updated at least once. The <strong>order</strong> property returns a list of input indexes in the order that the inputs were changed.</p>"
+        "<p>Specifies how events are logged.</p><p><strong>none</strong>: Events are not logged.</p><p><strong>firstOccurence</strong>: The first event for each <strong>input <em>n</em></strong> is recorded, beginning with a reset and ending when all fields have been updated at least once. The listener remembers the order in which each input received its first update.</p><p><strong>lastOccurence</strong>: The last input change for each <strong>input <em>n</em></strong> is recorded, beginning with a reset and ending when all fields have been updated at least once. The listener remembers the order in which each input received its most recent update.</p><p><strong>all</strong>: All input changes are logged, beginning with a reset and ending when all fields have been updated at least once. The <strong>order</strong> property returns a list of input indexes in the order that the inputs were changed.</p>"
     ],
     "eventGate.onFinish": [
         "onFinish",
@@ -2811,6 +2839,18 @@
         "Formatted",
         ""
     ],
+    "frameMsgBroadcaster.messageGroup": [
+        "messageGroup",
+        ""
+    ],
+    "frameMsgReceiver.messageGroups": [
+        "messageGroups",
+        ""
+    ],
+    "frameMsgReceiver.onMessage": [
+        "onMessage",
+        ""
+    ],
     "geoLocation.altitude": [
         "Altitude",
         "Returns a double representing the position's altitude in meters, relative to sea level, or null if the implementation cannot provide the data."
@@ -2866,6 +2906,10 @@
     "getNode.enum": [
         "enum",
         "Returns the names of the enum options, if applicable. For a boolean value, this column holds the strings associated with each value, such as \"On\" and \"Off\"."
+    ],
+    "getNode.error": [
+        "error",
+        "Returns the error string, if applicable."
     ],
     "getNode.hasChildren": [
         "hasChildren",
@@ -3315,6 +3359,10 @@
         "matchRegExp",
         "Specifies a regular expression that the message must match."
     ],
+    "iframeMessage.message": [
+        "message",
+        "Holds the message to send, if it is a JSON string. Use this property when sending a message from Solution Builder."
+    ],
     "iframeMessage.origin": [
         "origin",
         "The origin of the window posting the message. (<a href='https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage'>More information)</a>"
@@ -3369,7 +3417,7 @@
     ],
     "input": [
         "Input",
-        "TEST"
+        ""
     ],
     "inputOutOfRange": [
         "Input Out Of Range",
@@ -3394,6 +3442,10 @@
     "invokeAction.getTable": [
         "Get Table",
         "True if action loads table."
+    ],
+    "isBorder": [
+        "Is Border",
+        ""
     ],
     "isRepeaterMode": [
         "Is Repeater Mode",
@@ -3634,6 +3686,10 @@
     "keyboardEventData.ctrl": [
         "ctrl",
         "For an onKeyUp event, returns whether Ctrl is still being held, if it was held with the last key typed. For an OnKeyDown event, returns whether Ctrl was the last key down."
+    ],
+    "keyboardEventData.event": [
+        "event",
+        "Returns the name of the event type that triggers this block, such as onKeyDown."
     ],
     "keyboardEventData.filter": [
         "filter",
@@ -4175,6 +4231,10 @@
         "Bounds West",
         ""
     ],
+    "map.cloudsLayer": [
+        "Clouds Layer",
+        ""
+    ],
     "map.dataField": [
         "Data Field",
         ""
@@ -4223,9 +4283,17 @@
         "Min Zoom",
         "Specifies the smallest zoom level permitted for the map."
     ],
+    "map.temperatureUnit": [
+        "Temperature Unit",
+        ""
+    ],
     "map.trafficLayer": [
         "Traffic Layer",
         "Specifies whether to show the Google Maps Traffic Layer on the map."
+    ],
+    "map.weatherLayer": [
+        "Weather Layer",
+        ""
     ],
     "map.zoom": [
         "Zoom",
@@ -4647,6 +4715,10 @@
         "dragSource",
         "Returns the ID of the component that is dropped onto this component. To use this property, you must do the following:<ul><li>Enable the <strong>droppable</strong> Advanced property for this component.</li><li>Enable the <strong>draggable</strong> Advanced property for the component to be dragged.</li><li>Make sure that the <strong>dragGroup</strong> Advanced property is the same for both components.</li><li>Make sure that the <strong>dragGroup</strong> Advanced property is the same for both components.</li></ul>"
     ],
+    "mouseEventData.event": [
+        "event",
+        "Returns the event type that this listener heard."
+    ],
     "mouseEventData.fileName": [
         "fileName",
         "Returns the name of the file that is dropped onto this component. To use this property, you must do the following:<ul><li>Enable the <strong>droppable</strong> Advanced property for this component.</li><li>Set the <strong>dropGroup</strong> Advanced property for this component to <code>file_png</code>. You can also replace <code>png</code> with another file extension.</li></ul>"
@@ -4739,6 +4811,18 @@
         "value",
         "Sets and returns the value of this Number block or Constant block."
     ],
+    "numberSliderEditor.postfix": [
+        "Postfix",
+        ""
+    ],
+    "numberSliderEditor.presicion": [
+        "Precision",
+        ""
+    ],
+    "numberSliderEditor.valueScale": [
+        "Value Scale",
+        ""
+    ],
     "numberFormInput.alwaysShowSpinner": [
         "Always Show Spinner",
         "By default, spinners are displayed only when the user mouses over an input field. To always display spinners, set the property to TRUE."
@@ -4802,6 +4886,14 @@
     "openDashboard.self": [
         "Self",
         "If the action page is inside a Page Include component, opens the dashboard in the Page Include component. (<a href='http://wiki.dglogik.com/dglux5_wiki:actions:home'>More information</a>)"
+    ],
+    "openWeb.0": [
+        "Name 0",
+        ""
+    ],
+    "openWeb.1": [
+        "Value 0",
+        ""
     ],
     "or.0": [
         "input n",
@@ -5203,6 +5295,10 @@
         "SVG Defs",
         "<p>Specifies the &#60;defs&#62; component for the repeated SVG component. The following example specifies a style for the repeated SVG rectangle. The style includes a green fill and a black border stroke.</p><p><strong>Example</strong>: &#60;style&#62;rect&#123;fill:green;stroke:black;&#125;&#60;/style&#62;</p>"
     ],
+    "readOnly": [
+        "Read Only",
+        ""
+    ],
     "realtimeRecorder.0": [
         "name n",
         "Specifies a column name for the <strong>value <em>n</em></strong> values in the output table."
@@ -5319,6 +5415,10 @@
         "clientWidth",
         "Returns the width of the contents of this component, in pixels, when the component is resized. It includes padding, but it does not include the border or vertical scroll bar."
     ],
+    "resizeEventData.event": [
+        "event",
+        "Fires when the input event occurs and displays the name of the event type. It can be bound to an event."
+    ],
     "resizeEventData.input": [
         "input",
         "Specifies the event type to listen for. By default, it is the onResize event for this component."
@@ -5338,6 +5438,10 @@
     "reverseZIndex": [
         "Reverse Z Index",
         "For containers with horizontal or vertical layout that contain overlapping components, reverses the overlapped components."
+    ],
+    "revert": [
+        "Revert",
+        ""
     ],
     "right": [
         "Right",
@@ -5803,6 +5907,10 @@
         "active",
         "<p>Determines whether the block is currently listening.</p><p><strong>TRUE</strong>: The output properties of the block update whenever the user scrolls.</p><p><strong>FALSE</strong>: The output properties of the block do not update.</p>"
     ],
+    "scrollEventData.event": [
+        "event",
+        "Returns the type of event that triggered this block."
+    ],
     "scrollEventData.input": [
         "input",
         "Specifies the event on which the scroll listener starts reporting data. By default, <strong>input</strong> is an instance of onScrollEvent, so the listener returns data whenever the parent is scrolled. Note that the onScrollEvent property does not exist for all component types."
@@ -5923,6 +6031,18 @@
         "Service",
         "Service from which to get data."
     ],
+    "setState.0": [
+        "Path 0",
+        ""
+    ],
+    "setState.1": [
+        "Value 0",
+        ""
+    ],
+    "setState.2": [
+        "Original 0",
+        ""
+    ],
     "shadows": [
         "Shadows",
         "Attaches one or more shadows to this component."
@@ -5930,6 +6050,10 @@
     "shear": [
         "Shear",
         "Specifies the angle for a 3D shear transformation."
+    ],
+    "showBinding": [
+        "Show Binding",
+        ""
     ],
     "showDataTips": [
         "Show Datatips",
@@ -5978,6 +6102,18 @@
     "sin.output": [
         "input",
         "Returns the sine of the input."
+    ],
+    "snapInterval": [
+        "Snap Interval",
+        ""
+    ],
+    "snapSpeed": [
+        "Snap Speed",
+        ""
+    ],
+    "solidOnly": [
+        "Solid Only",
+        ""
     ],
     "spectrumSeries.dateField": [
         "Date Field",
@@ -6259,6 +6395,10 @@
         "output",
         "Returns the result of subtracting the input values."
     ],
+    "supportSeparateBorder": [
+        "Support Separate Border",
+        ""
+    ],
     "svg:text.textAnchor": [
         "Text Anchor",
         "Specifies how text is aligned to the SVG component."
@@ -6302,6 +6442,10 @@
     "symbol.symbol": [
         "Symbol",
         "Specifies which symbol is displayed in this symbol component. To use a symbol that is defined in the currently-open project, enter the name of the symbol. To use a symbol from another project in your library, enter the path to that symbol. By default, this is the only property for a symbol. To add properties to a symbol, open the Edit Properties dialog for that symbol."
+    ],
+    "tabIndex": [
+        "Tab Index",
+        ""
     ],
     "table": [
         "Table",
@@ -6687,6 +6831,10 @@
         "input",
         "Returns the tangent of the input."
     ],
+    "target": [
+        "Target",
+        "Specifies the browser window where the content is to be displayed."
+    ],
     "text": [
         "Text",
         "Sets or reflects the string that appears in this text component."
@@ -6730,6 +6878,10 @@
     "textEditor.displayAsPassword": [
         "Display As Password",
         "Display user-entered text as asterisks rather than clear text."
+    ],
+    "textEditor.ignoreDefaultStyle": [
+        "Ignore Default Style",
+        ""
     ],
     "textFormInput.inputType": [
         "Input Type",
@@ -6874,6 +7026,10 @@
     "tooltip": [
         "Tooltip",
         "Specifies the tooltip text to appear when the user mouses over this component. Tooltips use the default tooltip appearance for the user's browser and operating system. Tooltips appear only when the Mouse Enabled property is TRUE for the component and its parents."
+    ],
+    "tooltipHelpMode": [
+        "Tooltip Help Mode",
+        ""
     ],
     "top": [
         "Top",
@@ -7486,5 +7642,770 @@
     "zoomToolPosition": [
         "Zoom Tool Position",
         "Specifies the location of the zoom tool in its container."
+    ],
+
+
+
+    ".add": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/add.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____3"
+    ],
+    ".subtract": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/subtract.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____122"
+    ],
+    ".multiply": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/multiply.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____79"
+    ],
+    ".divide": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/divide.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____30"
+    ],
+    ".max": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/max.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____71"
+    ],
+    ".min": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/min.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____73"
+    ],
+    ".average": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/average.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____10"
+    ],
+    ".median": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/median.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____72"
+    ],
+    ".not": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/operations_not.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____80"
+    ],
+    ".modulo": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/modulo.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____75"
+    ],
+    ".log": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/logarithm.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____68"
+    ],
+    ".power": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/power.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____87"
+    ],
+    ".root": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/root.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____100"
+    ],
+    ".factorial": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/factorial.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____38"
+    ],
+    ".sin": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/sine.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____111"
+    ],
+    ".cos": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/cosine.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____20"
+    ],
+    ".tan": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/tangent.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____125"
+    ],
+    ".cot": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/cotangent.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____21"
+    ],
+    ".asin": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/arc_sine.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____8"
+    ],
+    ".acos": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/arc_cosine.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____7"
+    ],
+    ".atan": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/arc_tangent.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____9"
+    ],
+    ".toRadian": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/radian.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____91"
+    ],
+    ".toDegree": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/degree.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____26"
+    ],
+    ".abs": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/absolute.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____2"
+    ],
+    ".round": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/round.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____101"
+    ],
+    ".roundUp": [
+        ""
+    ],
+    ".roundDown": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/round_down.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____102"
+    ],
+    ".scale": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/round_up.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____103"
+    ],
+    ".bound": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/bound.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____13"
+    ],
+    ".length": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/length.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____58"
+    ],
+    ".left": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/left.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____57"
+    ],
+    ".right": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/right.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____98"
+    ],
+    ".substring": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/subst_block.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____121"
+    ],
+    ".trim": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/trim.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____128"
+    ],
+    ".split": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/split.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____113"
+    ],
+    ".label": [
+        ""
+    ],
+    ".parseNumber": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/parse_number.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____85"
+    ],
+    ".formatDate": [
+        ""
+    ],
+    ".formatNumber": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/format_number.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____40"
+    ],
+    ".encodeBase64str": [
+        ""
+    ],
+    ".decodeBase64str": [
+        ""
+    ],
+    ".encodeUriComponent": [
+        ""
+    ],
+    ".decodeUriComponent": [
+        ""
+    ],
+    ".encodeCamelCase": [
+        ""
+    ],
+    ".decodeCamelCase": [
+        ""
+    ],
+    ".md5str": [
+        ""
+    ],
+    ".sha1str": [
+        ""
+    ],
+    ".sha256str": [
+        ""
+    ],
+    ".datetime": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/date_time.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____25"
+    ],
+    ".dateFormat": [
+        ""
+    ],
+    ".parseDateTime": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/parse_date_time.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____84"
+    ],
+    ".dateMath": [
+        ""
+    ],
+    ".dateRange": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/date_range.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____24"
+    ],
+    ".script": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/script.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____106"
+    ],
+    ".stopwatch": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/stop_watch.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____117"
+    ],
+    ".propertyHub": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/property_hub.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____89"
+    ],
+    ".dynamic": [
+        ""
+    ],
+    ".table": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/table.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____123"
+    ],
+    ".tableSort": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/sort.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____112"
+    ],
+    ".tableFilter": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/filter.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____39"
+    ],
+    ".tableRollup": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/rollup.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____99"
+    ],
+    ".tableJoin": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/join.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____53"
+    ],
+    ".tableMultiJoin": [
+        ""
+    ],
+    ".tablePage": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/page.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____83"
+    ],
+    ".tableSelectRows": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/select_rows.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____109"
+    ],
+    ".tableSelectColumns": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/select_columns.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____108"
+    ],
+    ".tableAggregation": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/aggregation.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____5"
+    ],
+    ".tableGetColumns": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/get_columns.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____43"
+    ],
+    ".tableRemoveRows": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/remove_rows.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____94"
+    ],
+    ".tableTranspose": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/transpose.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____127"
+    ],
+    ".mapToTable": [
+        ""
+    ],
+    ".oneRowTable": [
+        ""
+    ],
+    ".makeObject": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/make_object.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____69"
+    ],
+    ".jsonParser": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/json_parser.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____54"
+    ],
+    ".csvParser": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/csv_parser.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____22"
+    ],
+    ".csvWriter": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/csv_writer.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____23"
+    ],
+    ".dfsymbol": [
+        ""
+    ],
+    ".dfcontent": [
+        ""
+    ],
+    ".repeater": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/repeater.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____95"
+    ],
+    ".fill": [
+        ""
+    ],
+    ".border": [
+        ""
+    ],
+    ".gradientMapping": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/gradient_mapping.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____47"
+    ],
+    ".gradientStop": [
+        ""
+    ],
+    ".stateItem": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/state.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____115"
+    ],
+    ".strUploader": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/string_uploader.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____120"
+    ],
+    ".strLoader": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/string_loader.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____119"
+    ],
+    ".listFiles": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/list_files.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____59"
+    ],
+    ".jsonpLoader": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/jsonp_loader.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____55"
+    ],
+    ".mouseEventData": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/mouse_event.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____76"
+    ],
+    ".keyboardEventData": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/keyboard_event.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____56"
+    ],
+    ".scrollEventData": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/scroll_event.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____107"
+    ],
+    ".resizeEventData": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/resize_event.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____97"
+    ],
+    ".relativize": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/relativize.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____93"
+    ],
+    ".relativizeNodePath": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Relativization.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____16"
+    ],
+    ".loadValue": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/load_value.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____64"
+    ],
+    ".loadHistory": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/load_history.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____63"
+    ],
+    ".invokeAction": [
+        ""
+    ],
+    ".getDefaultParams": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/get_default.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____44"
+    ],
+    ".dbQuery": [
+        ""
+    ],
+    ".listActions": [
+        ""
+    ],
+    ".getChildren": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/get_children.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____42"
+    ],
+    ".getNode": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/get_node.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____45"
+    ],
+    ".listNode": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/list_node.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____60"
+    ],
+    ".subscribeValue": [
+        ""
+    ],
+    ".loadHistories": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/multi-histories.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____77"
+    ],
+    ".string": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/string.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____118"
+    ],
+    ".number": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/number.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____81"
+    ],
+    ".bool": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/boolean.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____12"
+    ],
+    ".color": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/color.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____17"
+    ],
+    ".svgLightElement": [
+        ""
+    ],
+    ".catchError": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/catch_error.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____15"
+    ],
+    ".group": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Group.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____9"
+    ],
+    ".viewDeck": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Viewdeck Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____24"
+    ],
+    ".symbol": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Symbols.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____18"
+    ],
+    ".jswidget": [
+        ""
+    ],
+    ".pageInclude": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Page Include Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____15"
+    ],
+    ".text": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Text Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____19"
+    ],
+    ".shape": [
+        ""
+    ],
+    ".img": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Image Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____12"
+    ],
+    ".iframe": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/iFrame Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____11"
+    ],
+    ".video": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Video.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____23"
+    ],
+    ".rawSvgRepeater": [
+        ""
+    ],
+    ".scrollbarStyles": [
+        ""
+    ],
+    ".snappingPoint": [
+        ""
+    ],
+    ".snappingPoints": [
+        ""
+    ],
+    ".svg": [
+        ""
+    ],
+    ".svg:g": [
+        ""
+    ],
+    ".svg:path": [
+        ""
+    ],
+    ".svg:rect": [
+        ""
+    ],
+    ".svg:ellipse": [
+        ""
+    ],
+    ".svg:line": [
+        ""
+    ],
+    ".svg:image": [
+        ""
+    ],
+    ".svg:text": [
+        ""
+    ],
+    ".svg:clipPath": [
+        ""
+    ],
+    ".svg:use": [
+        ""
+    ],
+    ".svg:mask": [
+        ""
+    ],
+    ".svg:defs": [
+        ""
+    ],
+    ".scrollbarStyleItem": [
+        ""
+    ],
+    ".tweenProps": [
+        ""
+    ],
+    ".projectInfo": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/project-info.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____88"
+    ],
+    ".localStorage": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/local_storage.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____65"
+    ],
+    ".blobUrl": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/blob_url.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____11"
+    ],
+    ".closeDashboard": [
+        ""
+    ],
+    ".openDashboard": [
+        ""
+    ],
+    ".downloadFile": [
+        ""
+    ],
+    ".playSound": [
+        ""
+    ],
+    ".logout": [
+        ""
+    ],
+    ".gridColumn": [
+        ""
+    ],
+    ".iframeMessage": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/iframe_message.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____51"
+    ],
+    ".frameMsgBroadcaster": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/iframe_message.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____51"
+    ],
+    ".frameMsgReceiver": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/iframe_message.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____51"
+    ],
+    ".javascript": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/javascript.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____52"
+    ],
+    ".exportHtml": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/export_html.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____37"
+    ],
+    ".exportPaginatedPDF": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/export_paginated_pdf.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____36"
+    ],
+    ".geoLocation": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/geo-location.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____41"
+    ],
+    ".deviceOrientation": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/device-orientation.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____29"
+    ],
+    ".deviceMotion": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/device-motion.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____28"
+    ],
+    ".webDocument": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/web-document.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____130"
+    ],
+    ".getViewProperty": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/get_view_property.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____46"
+    ],
+    ".dragPosition": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/drag_position.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____31"
+    ],
+    ".dragSize": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/drag_size.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____32"
+    ],
+    ".zipUpload": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/zip-upload.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____133"
+    ],
+    ".zipDownload": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/zip-download.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____131"
+    ],
+    ".zipParser": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/zip-parser.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____132"
+    ],
+    ".mapSeriesData": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/map_series_data.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____70"
+    ],
+    ".closeWarningDialog": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/close_warning_dialog.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____16"
+    ],
+    ".dsaConnection": [
+        ""
+    ],
+    ".chart": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".scaleTicks": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Gauges.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____7"
+    ],
+    ".scaleLabels": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Gauges.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____7"
+    ],
+    ".scaleTrack": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Gauges.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____7"
+    ],
+    ".linearAxis": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".logAxis": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".categoryAxis": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".datetimeAxis": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".axisRenderer": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".radialAxisRenderer": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".angularAxisRenderer": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".linearAxisRenderer": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".logAxisRenderer": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".categoryAxisRenderer": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".datetimeAxisRenderer": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".lineSeries": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".areaSeries": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".columnSeries": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".barSeries": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".bubbleSeries": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".spectrumSeries": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".radarSeries": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".lineSet": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".areaSet": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".columnSet": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".barSet": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".radarSet": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".gridlines": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Charts.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____3"
+    ],
+    ".datagrid": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Data Grid Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____4"
+    ],
+    ".divTree": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Tree.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____21"
+    ],
+    ".divTreeGrid": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Tree Grid.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____22"
+    ],
+    ".datagridRows": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Data Grid Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____4"
+    ],
+    ".dathttps://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Data Grid Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____4agridHeader": [
+        ""
+    ],
+    ".divTreeItemModel": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Tree.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____21"
+    ],
+    ".divTreeGridRowModel": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Tree Grid.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____22"
+    ],
+    ".calendar": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Calendar Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____2"
+    ],
+    ".calendarCellStyle": [
+        ""
+    ],
+    ".daterangePicker": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Date Range Picker.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____5"
+    ],
+    ".map": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Google Map Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____8"
+    ],
+    ".mapGroup": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Map Groups.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____13"
+    ],
+    ".heatMap": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Heat Maps.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____10"
+    ],
+    ".heatMapOverlay": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Google Map Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____8"
+    ],
+    ".mapbox": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/MapBox GL Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____14"
+    ],
+    ".mapboxHeatMapLayer": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/MapBox GL Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____14"
+    ],
+    ".mapboxMarkerLayer": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/MapBox GL Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____14"
+    ],
+    ".mapboxGeoJsonLayer": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/MapBox GL Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____14"
+    ],
+    ".mapboxTileLayer": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/MapBox GL Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____14"
+    ],
+    ".mapboxDrawLayer": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/MapBox GL Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____14"
+    ],
+    ".mapboxHexbinLayer": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/MapBox GL Components.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____14"
+    ],
+    ".mapboxGroup": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Map Groups.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____13"
+    ],
+    ".topology": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Topology.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7C_____20"
+    ],
+    ".textFormInput": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02%20Components/Text%20Input.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7CForm%2520Input%7C_____1"
+    ],
+    ".textAreaFormInput": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Text Area.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7CForm%2520Input%7C_____2"
+    ],
+    ".colorFormInput": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Color Input.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7CForm%2520Input%7C_____5"
+    ],
+    ".numberFormInput": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Number Input.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7CForm%2520Input%7C_____6"
+    ],
+    ".rangeFormInput": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Range Input.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7CForm%2520Input%7C_____7"
+    ],
+    ".dateFormInput": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Date Input.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7CForm%2520Input%7C_____4"
+    ],
+    ".dgTimeFormInput": [
+        ""
+    ],
+    ".passwordFormInput": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/Password Input.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7CForm%2520Input%7C_____3"
+    ],
+    ".listFormElement": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/List Input.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7CForm%2520Input%7C_____9"
+    ],
+    ".fileFormInput": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/02 Components/File Input.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CComponents%2520and%2520Widgets%7CForm%2520Input%7C_____8"
+    ],
+    ".mode": [
+        ""
+    ],
+    ".variance": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/variance.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____129"
+    ],
+    ".stdDeviation": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/std_deviation.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____116"
+    ],
+    ".concat": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/concatenate.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____19"
+    ],
+    ".replace": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/replace.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____96"
+    ],
+    ".if": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/if.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____50"
+    ],
+    ".case": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/case.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____14"
+    ],
+    ".router": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/router.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____104"
+    ],
+    ".hub": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/hub.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____49"
+    ],
+    ".eventGate": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/event_gate.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____35"
+    ],
+    ".trace": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/trace.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____126"
+    ],
+    ".delay": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/delay.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____27"
+    ],
+    ".propertyHubModifier": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/property_hub_modifier.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____90"
+    ],
+    ".tableAdvancedRollup": [
+        ""
+    ],
+    ".tableMultiJoin": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/multijoin.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____78"
+    ],
+    ".realtimeRecorder": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/realtime_recorder.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____92"
+    ],
+    ".seriesRealtimeRecorder": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/series_realtime_recorder.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____110"
+    ],
+    ".tableColumnMapping": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/column_mapping.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____18"
+    ],
+    ".tableGroupBy": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/group_by.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____48"
+    ],
+    ".tableRowCells": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/table_row_cells.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____124"
+    ],
+    ".tableAddRow": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/add_row.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____4"
+    ],
+    ".tableEditRows": [
+        "https://developer.atrius-iot.com/documentation/solutionbuilder/default.htm#Topics/03%20Dataflow%20Block%20Reference/edit_rows.htm%3FTocPath%3DAtrius%2520Solution%2520Builder%7CDataflow%2520Programming%2520and%2520Scripting%7CDataflow%2520Programming%7C_____34"
+    ],
+    ".changeState": [
+        ""
+    ],
+    ".queryBinding": [
+        ""
+    ],
+    ".valueBinding": [
+        ""
+    ],
+    ".openWeb": [
+        ""
     ]
 }
